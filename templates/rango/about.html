@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html lang="en">
+{% block title_block %}
+    About
+{% endblock %}
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Rango</title>
-    </head>
-
-    <body>
+{% block body_block %}
         <div>
              <strong>{{ boldmessage }}</strong> <br />
             This tutorial has been put together by Xianyu Zhang!
@@ -19,7 +15,4 @@
             <a href = "/rango/"> Index Page </a> <br />
             <img src ="{{ MEDIA_URL }}cat.jpg" alt="Picture of Cat" /> <br />
         </div>
-
-    </body>
-
-</html>
+{% endblock %}
